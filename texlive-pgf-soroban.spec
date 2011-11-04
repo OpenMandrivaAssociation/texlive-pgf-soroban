@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /graphics/pgf/contrib/pgf-soroban
+# catalog-date 2008-08-23 00:06:02 +0200
+# catalog-license lppl
+# catalog-version 1.0
 Name:		texlive-pgf-soroban
 Version:	1.0
 Release:	1
@@ -41,6 +47,7 @@ The package makes it possible to create pictures of the soroban
 %doc %{_texmfdistdir}/doc/latex/pgf-soroban/pgf-soroban-doc.bib
 %doc %{_texmfdistdir}/doc/latex/pgf-soroban/pgf-soroban-doc.pdf
 %doc %{_texmfdistdir}/doc/latex/pgf-soroban/pgf-soroban-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -51,3 +58,5 @@ The package makes it possible to create pictures of the soroban
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
