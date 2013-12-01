@@ -1,12 +1,12 @@
-# revision 15878
+# revision 32269
 # category Package
 # catalog-ctan /graphics/pgf/contrib/pgf-soroban
-# catalog-date 2008-08-23 00:06:02 +0200
+# catalog-date 2013-11-28 10:26:58 +0100
 # catalog-license lppl
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-pgf-soroban
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Create images of the soroban using TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pgf-soroban
@@ -48,17 +48,3 @@ The package makes it possible to create pictures of the soroban
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 754860
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 719245
-- texlive-pgf-soroban
-- texlive-pgf-soroban
-- texlive-pgf-soroban
-- texlive-pgf-soroban
-
