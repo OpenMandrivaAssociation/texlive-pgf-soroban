@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-pgf-soroban
 Version:	1.1
-Release:	8
+Release:	9
 Summary:	Create images of the soroban using TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pgf-soroban
