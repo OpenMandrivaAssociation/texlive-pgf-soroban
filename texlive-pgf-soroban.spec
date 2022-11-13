@@ -1,18 +1,12 @@
-# revision 32269
-# category Package
-# catalog-ctan /graphics/pgf/contrib/pgf-soroban
-# catalog-date 2013-11-28 10:26:58 +0100
-# catalog-license lppl
-# catalog-version 1.1
 Name:		texlive-pgf-soroban
-Version:	1.1
-Release:	11
+Version:	32269
+Release:	1
 Summary:	Create images of the soroban using TikZ/PGF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pgf-soroban
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +17,12 @@ The package makes it possible to create pictures of the soroban
 (Japanese abacus) using PGF/TikZ.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +35,7 @@ The package makes it possible to create pictures of the soroban
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
