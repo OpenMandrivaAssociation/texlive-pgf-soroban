@@ -3,7 +3,7 @@ Version:	32269
 Release:	2
 Summary:	Create images of the soroban using TikZ/PGF
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pgf/contrib/pgf-soroban
+URL:		https://www.ctan.org/tex-archive/graphics/pgf/contrib/pgf-soroban
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pgf-soroban.doc.r%{version}.tar.xz
